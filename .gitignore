@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Iris_Username_and_logg_in
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int loop = 0; /*to start looping the program */
+            Console.WriteLine("Please enter your username and password.");
+            Console.WriteLine("User Name : ");
+            string user = Console.ReadLine();
+            Console.WriteLine("User Password.");
+            string pass = Console.ReadLine();
+            while (loop == 0 ) /*to end the program*/ {
+                if (user == "user" && pass == "password")/*2 conditions are true*/
+                {
+                    Console.WriteLine("Welcome.");
+                    Console.Read();
+                    loop = 1;
+
+                }
+                else {
+                    Console.WriteLine("Access Failed , press any key to end porgram.");
+                    Console.ReadKey();
+                    Console.WriteLine("try Again.");
+                   
+                }
+            }
+           
+        }
+    }
+}
